@@ -13,7 +13,7 @@ public class InterfazImc {
     
     public static void main(String []oso){
         
-      Imc imc=new Imc(/*80,1.67f*/);
+      Imc imc=new Imc(80,1.67f);
      
        
     
@@ -38,8 +38,8 @@ s=(short)i;
   
   boolean valor=false;
   
-  Imc otro=new Imc();
-  System.out.println(otro.isflaco());
+ // Imc otro=new Imc();
+ // System.out.println(otro.isflaco());
   
      
      

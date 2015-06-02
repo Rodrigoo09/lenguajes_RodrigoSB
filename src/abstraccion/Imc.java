@@ -39,9 +39,9 @@ public class Imc {
     }
     
     
-    public Imc(/*float p, float a*/){
-       // peso=p;
-        //altura=a;
+    public Imc(float p, float a){
+        peso=p;
+        altura=a;
     }
     
     public float calcular(){
