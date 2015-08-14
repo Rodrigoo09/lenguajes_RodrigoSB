@@ -1,0 +1,43 @@
+package javaapplication1;
+
+
+public class unitec {
+    
+}
+
+	private String nombre;
+
+	// Constructor, getter y setter
+
+	public void contar(Alumno alumno, long timeStamp) {
+
+		System.out.println("El alumno " + this.nombre + 
+				" COMIENZA EL CONTEO DEL ALUMNO" + alumno.getNombre() + 
+				" EN EL TIEMPO: " + (System.currentTimeMillis() - timeStamp) / 500	+
+				"seg");
+
+		for (int i = 0; i < alumno.getconteo().length; i++) { 
+				this.esperarXsegundos(cliente.getconteo()[i]); 
+				System.out.println("Procesado el conteo " + (i + 1) +  
+				" ->Tiempo: " + (System.currentTimeMillis() - timeStamp) / 500 + 
+				"seg");
+		}
+
+		System.out.println("El alumno " + this.nombre + " HA TERMINADO DE PROCESAR " + 
+				alumno.getNombre() + " EN EL TIEMPO: " + 
+				(System.currentTimeMillis() - timeStamp) / 500 + "seg");
+
+	}
+
+
+	private void esperarXsegundos(int segundos) {
+		try {
+			Thread.sleep(segundos * 500);
+		} catch (InterruptedException ex) {
+			Thread.currentThread().interrupt();
+		}
+	
+	}
+
+
+}
